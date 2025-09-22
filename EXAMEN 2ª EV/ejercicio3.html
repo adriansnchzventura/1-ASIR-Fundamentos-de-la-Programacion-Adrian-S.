@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Personalización de Perfil de Usuario</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function personalizarPerfil()
+{
+	indice=document.form3.colFon.options.selectedIndex;
+	usuario=document.form3.nombre.value;
+	colorFondo=document.form3.colFon.options[indice].name;
+	colorTexto=;
+
+	if (colorTexto == "white" && colorFondo =="red")
+	}
+	document.style.backgroundColor=colorFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+	
+	else if (colorTexto == "white" && colorFondo =="green")
+	}
+	document.style.backgroundColor=colorFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+
+	else if (colorTexto == "white" && colorFondo =="blue")
+	}
+	document.style.backgroundColor=colorFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+
+	else if (colorTexto == "black" && colorFondo =="red")
+	}
+	document.style.backgroundColor=colorFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+
+	else if (colorTexto == "black" && colorFondo =="green")
+	}
+	document.style.backgroundColor=colorFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+
+	else if (colorTexto == "black" && colorFondo =="blue")
+	}
+	document.style.backgroundColor=colordFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+
+	else if (colorTexto == "yellow" && colorFondo =="red")
+	}
+	document.style.backgroundColor=colorFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+
+	else if (colorTexto == "yellow" && colorFondo =="green")
+	}
+	document.style.backgroundColor=colorFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+
+	else if (colorTexto == "yellow" && colorFondo =="blue")
+	}
+	document.style.backgroundColor=colorFondo;
+	document.style.color=colorTexto;
+	document.write("Bienvenido "+usuario+"!");
+	document.write("Es un placer para nosotros que te hayas decicido por crear un perfil.");
+	}
+}
+</script>
+
+    <h2>Personalización de Perfil de Usuario</h2>
+    <form name="form3">
+        <label for="nameInput">Nombre:</label>
+        <input type="text" name="nombre">
+        <br>
+        <label>Color de Fondo:</label>
+        <select name="colFon">
+            <option name="red" >Rojo</option>
+            <option name="green">Verde</option>
+            <option name="blue">Azul</option>
+        </select>
+        <br>
+        <label>Color de Texto:</label>
+        <input type="checkbox" name="colT" value="white"> Blanco
+        <input type="checkbox" name="colT" value="black"> Negro
+        <input type="checkbox" name="colT" value="yellow"> Amarillo
+        <br>
+        <button type="button" onClick="personalizarPerfil()">Aplicar Estilos</button>
+    </form>
+</body>	

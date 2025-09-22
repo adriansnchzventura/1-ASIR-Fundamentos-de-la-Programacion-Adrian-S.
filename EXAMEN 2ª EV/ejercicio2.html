@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Color Favorito</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function verificarColor()
+{
+	indice=document.form2.colores.options.selectedIndex;
+	seleccion=document.form2.colores.options[indice].value;
+	
+	
+	if (seleccion == "Azul")
+	{
+	document.write("El color seleccionado es el azul");		
+	}
+
+	else
+	{
+	document.write("El color seleccionado no es el azul");		
+	}
+}
+</script>
+    <h2>Verificación de Color Favorito</h2>
+    <form name="form2">
+        <label >Selecciona tu color favorito:</label>
+        <select name="colores">
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarillo">Amarillo</option>
+        </select>
+        <button type="button" onClick="verificarColor()">Verificar</button>
+    </form>
+</body>	
+	

@@ -1,0 +1,35 @@
+<!doctype html>
+<Html>
+<head>
+<title>Problema 2</title>
+</head>
+<body>
+<script type="text/javascript">
+var edad, hora;
+edad=parseInt(prompt("Por favor, introduzca su edad"));
+hora=parseFloat(prompt("Introduzca la hora de asistencia"));
+
+if (edad < 12)
+{
+	document.write("Su entrada cuesta 5 €");
+}
+
+else if (edad > 18)
+{
+	document.write("Su entrada cuesta 12 €");
+}
+else if ( edad <= 18 && edad >= 12 )
+{
+	if ( hora >= 18.00)
+	{
+	document.write("Su entrada cuesta 10 €");
+	}
+	else
+	{
+	document.write("Su entrada cuesta 7 €");
+	}
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Descuento</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function calcularPrecio()
+{
+	preci=parseFloat(document.form1.precio.value);
+	descuento=document.form1.desc.value;
+	
+	if (descuento == "DESCUENTO10")
+	{
+		dfinal=(preci*10)/100;
+		pfinal=preci-dfinal;
+		document.write("El precio con su código de descuento del 10% aplicado es de "+pfinal+" €");
+	}
+	
+	if (descuento == "DESCUENTO20")
+	{
+		dfinal=(preci*20)/100;
+		pfinal=preci-dfinal;
+		document.write("El precio con su código de descuento del 20% aplicado es de "+pfinal+" €");
+	}
+	else
+	{
+	document.write("El código "+descuento+" introducido no es valido");
+	}
+}
+</script>
+
+    <h2>Calculadora de Descuento</h2>
+    <form name="form1">
+        <label> Precio del Producto:</label>
+        <input type="number" name="precio">
+		<br>
+        <label >Código de Descuento:</label>
+        <input type="text" name="desc">
+        <button type="button" onclick="calcularPrecio()">Calcular Descuento</button>
+    </form>
