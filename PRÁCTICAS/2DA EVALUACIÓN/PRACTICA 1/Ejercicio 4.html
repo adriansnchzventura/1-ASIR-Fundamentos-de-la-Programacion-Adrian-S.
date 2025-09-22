@@ -1,0 +1,27 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title>PRACTICA FUNCIONES 4</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function CalculoIva(Precio,Iva)
+{
+	var  PrecioFinal= ((Precio * Iva) / 100) + Precio;
+	return PrecioFinal
+}
+
+
+var Precio, Iva, PrecioFinal;
+
+Precio= parseFloat(prompt("Introduce el precio"));
+Iva= parseFloat(prompt("Introduce el porcentaje de Iva"));
+
+PrecioFinal = CalculoIva(Precio,Iva);
+
+document.write("El precio final, tras aplicarle el "+Iva+"% a un articulo de precio "+Precio+" € es de "+PrecioFinal+" € <br>");
+</script>
+</body>
+</html>

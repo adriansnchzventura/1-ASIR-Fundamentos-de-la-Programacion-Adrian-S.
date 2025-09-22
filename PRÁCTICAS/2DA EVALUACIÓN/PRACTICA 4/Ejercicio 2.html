@@ -1,0 +1,41 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> </title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+cadena = prompt("Introduzca su frase");
+nuevaCad= "";
+palabra = true;
+
+	for(i=0 ; i < cadena.length; i++)
+	{
+	PrimLetra = cadena[i]
+	
+		if(Primletra == " ")
+		{
+			nuevaCad += PrimLetra;
+			palabra = true;
+		}
+
+		else if (palabra)
+		{
+		nuevaCad += PrimLetra.toUpperCase();
+		}
+		
+		else
+		{
+		nuevaCad += PrimLetra
+		}
+	
+	palabra = false
+	}
+	
+	document.write(nuevaCad)
+</script>
+</body>
+</html>

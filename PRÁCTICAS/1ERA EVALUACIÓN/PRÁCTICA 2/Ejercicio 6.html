@@ -1,0 +1,30 @@
+<!doctype html>
+<Html>
+<head>
+<title>Ejercicio de Condicionales 6</title>
+</head>
+<body>
+<script>
+	var art, cant, cod;
+	art=prompt("Ingrese el articulo adquirido");
+	cant=parseInt(prompt("Ingrese la cantidad de articulos"));
+	cod=prompt("Posee codigo de descuento?");
+		if (cod == "Si")
+	{
+		document.write("Se le aplica un 20%");
+	}
+	else if (art == "Movil" && cant >= 3 && cod == "No")
+	{
+		document.write("Se le aplica un 10%");
+	}
+	else if ((art == "Tablet" || art == "Portatil") && cant >= 2 && cod == "No")
+	{
+		document.write("Se le aplica un 15%");
+	}	
+	else 
+	{
+		document.write("No tiene ningun descuento aplicable");
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Ejercicio 1
+Escribe un programa que pida al usuario dos números y muestre cuál de ellos es mayor, o si ambos son iguales.
+
+Ejercicio 2: Par o impar
+Escribe un programa que pida al usuario un número entero y muestre si es par o impar.
+
+Ejercicio 3: Multiplicación o suma según los números
+Escribe un programa que pida al usuario dos números. Si ambos números son mayores que 10, los multiplica. Si no, los suma. Muestra el resultado.
+
+Ejercicio 4: Rango de edad
+Crea un programa que pida al usuario su edad. Si tiene menos de 18 años, muestra "Eres menor de edad". Si tiene entre 18 y 65 años, muestra "Eres adulto". Si tiene más de 65 años, muestra "Eres mayor".
+
+Ejercicio 5:Escribe un programa que pida al usuario su peso (en kg) y su altura (en metros), calcule su índice de masa corporal (IMC), y luego muestre un mensaje indicando si está en su peso ideal, bajo de peso o con sobrepeso. La fórmula del IMC es:
+IMC = peso / (altura * altura)
+
+Si el IMC es menor que 18.5, muestra "Bajo de peso".
+Si el IMC es entre 18.5 y 24.9, muestra "Peso ideal".
+Si el IMC es 25 o mayor, muestra "Sobrepeso".
+

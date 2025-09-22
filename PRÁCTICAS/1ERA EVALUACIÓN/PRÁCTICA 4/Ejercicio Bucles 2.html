@@ -1,0 +1,40 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica Bucles 2 - Ejercicio 2</title>
+</head>
+<body>
+<script type="text/javascript">
+var num, i;
+num= parseInt(prompt("Introduce un número"));
+for (i = 0; i <=num; i++){
+	document.write("<h2> Hasta el "+num+" son divisibles entre 3: </h2>");
+	document.write("<ul>");
+		for (i = 1; i <= num; i++){
+			if (i % 3 == 0)
+			document.write("<li>");
+			document.write(i+"<br>");
+			document.write("</li>");
+			}
+			
+document.write("</ul>");
+}
+		document.write("------------------------------------------------------------<br>");
+for (i = 0; i <=num; i++){
+	document.write("<h2> Hasta el "+num+" son divisibles entre 5: </h2>");
+	document.write("<ul>");
+		for (i = 1; i <= num; i++){
+			if (i % 5 == 0)
+			document.write("<li>");
+			document.write(i+"<br>");
+			document.write("</li>");
+			}
+			
+document.write("</ul>");
+}
+
+</script>
+</body>
+
+</html>

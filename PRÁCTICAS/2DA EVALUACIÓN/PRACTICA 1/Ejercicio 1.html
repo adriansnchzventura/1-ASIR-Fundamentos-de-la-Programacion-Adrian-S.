@@ -1,0 +1,27 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title>PRACTICA FUNCIONES 1</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function CalcularArea(ancho,largo)
+{
+	var Area = ancho * largo;
+	return Area;
+}
+
+
+var ancho, largo, resultado;
+
+ancho= parseFloat(prompt("Introduce el ancho"));
+largo= parseFloat(prompt("Introduce el largo"));
+
+resultado= CalcularArea(ancho,largo);
+
+document.write("El area de un rectangulo de ancho " + ancho + "cm y largo "+ largo +"cm es: " + resultado + "cm <br>");
+</script>
+</body>
+</html>

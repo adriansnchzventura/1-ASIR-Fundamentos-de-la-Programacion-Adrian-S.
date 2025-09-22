@@ -1,0 +1,14 @@
+Ejercicio 1: Contar números pares e impares
+Pide al usuario un número límite y, usando un bucle, cuenta cuántos números son pares y cuántos impares desde 1 hasta ese número.
+
+Ejercicio 2: Números divisibles por 3 o 5
+Pide al usuario un número límite y muestra todos los números desde 1 hasta ese límite que sean divisibles por 3 o por 5.
+
+Ejercicio 3: Encontrar múltiplos comunes de 3 y 4
+Pide al usuario un número límite y muestra todos los números entre 1 y el límite que sean múltiplos de 3 y de 4.
+
+Ejercicio 4: Comprobar si un número es perfecto
+Pide al usuario un número y verifica si es un número perfecto. Un número es perfecto si es igual a la suma de sus divisores (excluyendo el propio número). Ejemplo: 6 es perfecto porque 1 + 2 + 3 = 6.
+
+Ejercicio5: Suma de números pares e impares
+Pide al usuario un número límite. Usa un bucle para sumar todos los números pares e impares hasta ese límite y muestra la suma de cada tipo.

@@ -1,0 +1,31 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title>PRACTICA 2 FUNCIONES 3</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function CalculoFactorial(num)
+{
+ var i, num, resul ;
+ 
+   resul=1;
+   i=0;
+  for (i = 1 ; i <= num ; i++)
+{
+	resul= i * resul;
+}
+	document.write("<br> El factorial de "+num+" es "+ resul);
+}
+
+ var i, num, resul;
+   resul=1;
+   num = parseInt(prompt("¿De que numero quieres saber el factorial?"));
+
+CalculoFactorial(num);
+
+</script>
+</body>
+</html>

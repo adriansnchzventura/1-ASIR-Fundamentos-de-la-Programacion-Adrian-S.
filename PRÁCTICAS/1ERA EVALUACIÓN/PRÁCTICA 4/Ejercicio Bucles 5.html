@@ -1,0 +1,42 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica Bucles 2 - Ejercicio 5</title>
+</head>
+<body>
+<script type="text/javascript">
+var num, i, sumap, sumai;
+num= parseInt(prompt("Introduce un número"));
+i = 0;
+sumap = 0;
+sumai = 0;
+for (i = 0; i <= num; i++)
+{
+	if (i % 2 != 0){	
+	sumai = sumai + i;
+	document.write(i+"<br>"+"<br>")
+	}
+
+}
+document.write("______________________________________<br>");
+document.write("| La suma de todos los números impares es de "+sumai+"| <br>");
+document.write("··························································<br>");
+
+document.write("------------------------------------------------------------<br>");
+
+
+for (i = 0; i <= num; i++){
+	if (i % 2 == 0){
+	sumap = sumap + i;
+	document.write(i+"<br>"+"<br>")
+	}
+
+}
+document.write("__________________________________<br>");
+document.write("| La suma de todos los numeros pares es "+sumap+"| <br>");
+document.write("···················································<br>");
+</script>
+</body>
+
+</html>

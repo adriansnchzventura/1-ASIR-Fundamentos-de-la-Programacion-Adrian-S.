@@ -1,0 +1,23 @@
+<!doctype html>
+<Html>
+<head>
+<title>Ejercicio de Condicionales 4</title>
+</head>
+<body>
+<script>
+	var edad, precio, desc,prfinal;
+	edad=prompt("Ingrese su edad");
+	precio=prompt("Ingrese su precio");
+	if (edad <= 18 | edad >= 65 )
+	{
+		desc= precio * 0.1
+		prfinal= precio - desc
+		document.write("Su importe a pagar es de "+prfinal);
+	}
+	else 
+	{
+		document.write("No tiene ningun descuento aplicable, su precio a pagar es de "+precio);
+	}
+</script>
+</body>
+</html>

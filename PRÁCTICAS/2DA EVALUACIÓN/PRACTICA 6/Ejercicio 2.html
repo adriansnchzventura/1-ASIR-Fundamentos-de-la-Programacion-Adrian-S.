@@ -1,0 +1,46 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica 6 - Ejercicio 2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function tablaMult()
+{
+
+multiplo=parseInt(document.dato.multiplo.value);
+i=0;
+
+document.write("<table border=1px >");
+
+for(i=0;i <= 10; i++)
+{
+resul = multiplo * i;
+
+
+
+
+document.write("<tr><td align=center>"+multiplo+" x "+i+" = </td><td>"+resul+"</td></tr>");
+
+}
+
+document.write("</table>")
+
+}
+</script>
+
+<form name="dato">
+
+<label for="multiplo">Ingrese el numero del que desea saber la tabla: 
+<input type="number" name="multiplo"><br>
+
+
+<input type="button" value="Confirmar" onClick="tablaMult()">
+
+</form>
+
+</body>
+</html>

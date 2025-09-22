@@ -1,0 +1,28 @@
+<!doctype html>
+<Html>
+<head>
+<title>Ejercicio de Condicionales 5</title>
+</head>
+<body>
+<script>
+	var Peso, Alt, imc;
+	
+	Peso=parseFloat(prompt("Ingrese su peso en Kg"));
+	Alt=parseFloat(prompt("Ingrese su altura en M"));
+	imc=Peso / (Alt * Alt);
+	
+	if (imc<18.5)
+	{
+		document.write("Su IMC es de "+imc+".  Se encuentra en una situacion de Bajo Peso");
+	}
+	else if (imc>=25)
+		{
+			document.write("Su IMC es de "+imc+".  Se encuentra en una situacion de Sobrepeso");
+		}
+		else
+		{
+		document.write("Su IMC es de "+imc+".  Se encuentra en su Peso Ideal");
+		}
+</script>
+</body>
+</html>

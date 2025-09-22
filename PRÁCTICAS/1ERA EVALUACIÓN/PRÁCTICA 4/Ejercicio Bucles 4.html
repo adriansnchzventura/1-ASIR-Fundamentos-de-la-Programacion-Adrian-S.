@@ -1,0 +1,31 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica Bucles 2 - Ejercicio 4</title>
+</head>
+<body>
+<script type="text/javascript">
+var num, i,suma;
+num= parseInt(prompt("Introduce un número"));
+i = 1;
+suma = 0;
+for (i = 1; i < num; i++){
+	if ( num % i == 0){
+		suma = suma + i;
+		}
+}
+	if(suma == num)
+	{
+		document.write("El "+num+" es un número perfecto");
+	}
+	else
+	{
+		document.write("El "+num+" no es un número perfecto");
+	}
+
+</script>
+</body>
+
+</html>
+

@@ -1,0 +1,36 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica 6 - Ejercicio 1</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function convertirGrados()
+{
+
+celsius=parseFloat(document.temp.celsius.value);
+
+
+farenheit = (celsius * 9/5) +32;
+
+
+document.write("Tras convertirlo, vemos que "+celsius+"ºC son "+farenheit+" º F<br>");
+
+}
+</script>
+
+<form name="temp">
+
+<label for="celsius">Temperatura en grados Celsius: 
+<input type="number" name="celsius"> ºC<br>
+
+
+<input type="button" value="Confirmar" onClick="convertirGrados()">
+
+</form>
+
+</body>
+</html>

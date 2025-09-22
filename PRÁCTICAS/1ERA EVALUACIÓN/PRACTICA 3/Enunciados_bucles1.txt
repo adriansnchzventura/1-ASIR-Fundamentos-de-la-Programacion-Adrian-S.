@@ -1,0 +1,15 @@
+Ejercicio 1: Contar hasta un número
+Pide al usuario un número con prompt y muestra desde 1 hasta ese número.
+
+Ejercicio 2: Tabla de multiplicar
+Pide al usuario un número y muestra la tabla de multiplicar de ese número del 1 al 10.
+
+Ejercicio 3: Sumar números hasta un límite
+Pide al usuario un número y muestra la suma de todos los números desde 1 hasta ese número.
+
+Ejercicio 4: Imprimir números pares
+Pide al usuario un número y muestra todos los números pares desde 1 hasta ese número.
+
+Ejercicio 5: Imprimir números descendentes
+Pide al usuario un número y muestra todos los números desde ese número hasta 1.
+

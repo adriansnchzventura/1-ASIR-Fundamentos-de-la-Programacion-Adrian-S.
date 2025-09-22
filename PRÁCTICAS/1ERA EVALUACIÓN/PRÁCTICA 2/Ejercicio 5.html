@@ -1,0 +1,33 @@
+<!doctype html>
+<Html>
+<head>
+<title>Ejercicio de Condicionales 5</title>
+</head>
+<body>
+<script>
+	var edad, valor;
+	edad=parseInt(prompt("Ingrese su edad"));
+	valor=parseFloat(prompt("Ingrese el valor de su compra"));
+	if (edad <= 12 && valor>= 100 || edad >= 65 && valor >= 100)
+	{
+
+		valor = valor - (valor * 0.15);
+		document.write("Su importe a pagar es de "+valor);
+	}
+	else if  (edad >= 18 && edad <= 25 && valor >= 50)
+	{
+		precio = valor - (valor * 0.10);
+		document.write("Su importe a pagar es de "+valor);
+	}
+	else if  (edad > 25 && valor >=200)
+	{
+		valor = valor - (valor * 0.05);
+		document.write("Su importe a pagar es de "+valor);
+	}
+	else 
+	{
+		document.write("No tiene ningun descuento aplicable, su precio a pagar es de "+valor);
+	}
+</script>
+</body>
+</html>

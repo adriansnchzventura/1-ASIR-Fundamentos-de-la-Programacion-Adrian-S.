@@ -1,0 +1,34 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title>PRACTICA 3 FUNCIONES 1</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function SumaDigitos(Num)
+{ 
+var Num, DigitoFin, DigitoIni, Suma;
+suma=0
+do
+{
+
+DigitoFin= Num % 10 ;
+
+DigitoIni = (Num - DigitoFin)/10;
+
+Suma= DigitoFin + DigitoIni ;
+
+document.write("La suma de "+Num+" --> "+DigitoIni+" + "+DigitoFin+" Da de resultado "+Suma);
+}
+while(num > 0)
+}
+
+Num= parseInt(prompt("Introduce un numero"));
+
+
+SumaDigitos(Num);
+</script>
+</body>
+</html>

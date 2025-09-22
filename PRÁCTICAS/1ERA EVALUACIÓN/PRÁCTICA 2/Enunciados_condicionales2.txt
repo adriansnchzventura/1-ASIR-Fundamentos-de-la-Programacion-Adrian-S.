@@ -1,0 +1,23 @@
+1.-Escribe un programa que pida al usuario su temperatura corporal. Si la temperatura está entre 36°C y 37.5°C inclusive, muestra el mensaje "Estás sano". Si la temperatura es menor de 36°C o mayor de 37.5°C, muestra "Posible enfermedad".
+
+2.-Crea un programa que pida al usuario su edad y su país de residencia. Si el usuario tiene 18 años o más y vive en un país donde el voto es permitido (por ejemplo, "España"), muestra "Eres elegible para votar". En cualquier otro caso, muestra "No eres elegible para votar".
+
+3.-Escribe un programa que pida al usuario su rol en un sitio web (puede ser "admin", "editor", o "visitante"). Si el rol es "admin" o "editor", muestra "Acceso permitido". Si es cualquier otro, muestra "Acceso denegado".
+
+4.-Crea un programa que pida al usuario su edad y el precio de una compra. Si la edad es menor de 18 o mayor de 65, aplica un descuento del 10% sobre el precio. Muestra el precio final con el descuento aplicado si corresponde, y si no, muestra el precio sin descuento.
+
+5.-Crea un programa que pida al usuario su edad y el valor de su compra. Aplica descuentos basados en las siguientes reglas:
+
+-Si la edad es menor de 12 o mayor de 65, aplica un 15% de descuento si la compra es mayor de 100€.
+-Si la edad está entre 18 y 25 y la compra es mayor de 50€, aplica un 10% de descuento.
+-Si la edad es mayor de 25 y la compra es mayor de 200€, aplica un 5% de descuento.
+-Si ninguna de las condiciones se cumple, no hay descuento.
+
+6.-Crea un programa que pida al usuario la categoría del producto (puede ser "móvil", "portátil" o "tablet"), la cantidad de productos que va a comprar y si tiene un código de descuento (ingresando "sí" o "no"). Aplica las siguientes reglas:
+
+-Si la categoría es "móvil" y compra más de 3 unidades, aplica un descuento del 10%.
+-Si la categoría es "portátil" o "tablet" y compra 2 o más unidades, aplica un descuento del 15%.
+-Si tiene un código de descuento y compra al menos 1 producto, aplica un 20% de descuento (este descuento tiene prioridad sobre los otros).
+-Si no cumple ninguna de las condiciones anteriores, no hay descuento.
+
+7.-Crea un programa que pida al usuario un número del 1 al 7 que represente un día de la semana (1 para lunes, 2 para martes, etc.). Usa switch para mostrar si el día es laborable o si es fin de semana.

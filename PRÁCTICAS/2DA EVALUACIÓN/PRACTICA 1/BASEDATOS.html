@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Database Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 50%;
+            background-color: #2e2e3e;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .folder {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #444456;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .folder:hover {
+            background-color: #555568;
+        }
+
+        .data {
+            margin: 10px 20px;
+            padding: 10px;
+            background-color: #2e2e3e;
+            border: 1px solid #444;
+            border-radius: 5px;
+        }
+
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #5a5acb;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #4646a7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Database</h1>
+        <div id="login">
+            <p>Please enter the password to access the database:</p>
+            <input type="password" id="main-password" placeholder="Password">
+            <button onclick="verifyPassword('main')">Enter</button>
+        </div>
+        <div id="database" class="hidden">
+            <h2>Database Folders</h2>
+            <div class="folder" onclick="openFolder('folder1')">Folder 1</div>
+            <div class="folder" onclick="openFolder('folder2')">Folder 2</div>
+            <div class="folder" onclick="openFolder('folder3')">Folder 3</div>
+
+            <div id="folder1" class="hidden">
+                <p><strong>Folder 1 Data:</strong></p>
+                <div class="data">Name: Alice, Age: 30, Position: Engineer</div>
+                <div class="data">Name: Bob, Age: 45, Position: Manager</div>
+            </div>
+
+            <div id="folder2" class="hidden">
+                <p><strong>Folder 2 Data:</strong></p>
+                <div class="data">Order ID: 12345, Amount: $500, Status: Shipped</div>
+                <div class="data">Order ID: 67890, Amount: $1200, Status: Pending</div>
+            </div>
+
+            <div id="folder3" class="hidden">
+                <p><strong>Folder 3 Data:</strong></p>
+                <div class="data">Project: Apollo, Deadline: 2024-12-31</div>
+                <div class="data">Project: Luna, Deadline: 2025-06-30</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const PASSWORD = "s4n1s1dr0";
+
+        function verifyPassword(context) {
+            const enteredPassword = document.querySelector('#main-password').value;
+            if (enteredPassword === PASSWORD) {
+                if (context === 'main') {
+                    document.getElementById('login').classList.add('hidden');
+                    document.getElementById('database').classList.remove('hidden');
+                } else if (context.startsWith('folder')) {
+                    document.getElementById(context).classList.remove('hidden');
+                }
+            } else {
+                alert('Incorrect password.');
+            }
+        }
+
+        function openFolder(folderId) {
+            const enteredPassword = prompt('Enter password to access this folder:');
+            if (enteredPassword === PASSWORD) {
+                document.getElementById(folderId).classList.remove('hidden');
+            } else {
+                alert('Incorrect password. Access denied.');
+            }
+        }
+    </script>
+</body>
+</html>

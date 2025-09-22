@@ -1,0 +1,29 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> </title>
+</head>
+<body>
+
+<script type="text/javascript">
+cadena = prompt("Introduzca su palabra");
+var reves = ""
+minus = cadena.toLowerCase()
+	for( i = minus.length - 1 ; i >= 0 ; i--)
+	{
+	reves += minus.charAt(i).toLowerCase();
+	}
+		if(reves == minus)
+		{
+			document.write( "<br>La palabra "+cadena+" es un palindromo" );
+		}
+		
+		else
+		{
+			document.write( "<br>La palabra "+cadena+" no es un palindromo" );
+		}
+	
+</script>
+</body>
+</html>

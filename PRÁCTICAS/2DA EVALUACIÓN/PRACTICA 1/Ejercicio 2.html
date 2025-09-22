@@ -1,0 +1,26 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title>PRACTICA FUNCIONES 2</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function ConvertirGrados(Farenheit,Celsius)
+{
+	var  Farenheit = (Celsius * 9/5) + 32;
+	return Farenheit;
+}
+
+
+var Celsius, Farenheit;
+
+Celsius= parseFloat(prompt("Introduce la temperatura en grados Celsius"));
+
+Farenheit = ConvertirGrados(Farenheit,Celsius);
+
+document.write(Celsius +" ºC convertidos a Farenheit son "+ Farenheit +" ºF");
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title>PRACTICA 2 FUNCIONES 1</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function RecuentoPares(numIn, NumFin)
+{
+var numIn, NumFin, contadorp, i;
+contadorp = 0;
+for (i = numIn; i <= numFin; i++){
+	if (i % 2 == 0)
+	contadorp++
+	
+	}
+	document.write("Hay un total de "+ contadorp + " numeros pares. <br>");
+}
+
+var numIn, NumFin, i;
+
+numIn= parseInt(prompt("Introduce el numero inicial"));
+numFin= parseInt(prompt("Introduce el numero final"));
+
+RecuentoPares(numIn, numFin);
+
+</script>
+</body>
+</html>
