@@ -1,0 +1,62 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> </title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function cargar_datos(notas)
+{
+	var f,v;
+	for(f=0; f<notas.length; f++)
+	{
+		v=prompt("Ingrese nota:")
+		notas[f]=parseInt(v);
+	}
+}
+
+function mostrar_notas(notas)
+{
+	var f;
+	document.write("LISTADO DE NOTAS <br>");
+	
+	for(f=0; f<notas.length; f++)
+	{
+		document.write(f+"- - -"+notas[f]+"<br><br>");
+	}
+}
+
+function AlumnosAprobados(notas)
+{
+	var f, conta=0, conts=0;
+	for(f=0; f<notas.length; f++)
+	{
+		if(notas[f]>=5)
+		{
+			conta++;
+		}
+		
+		else
+		{
+			conts++;
+		}
+	}
+	document.write("Han aprobado un total de "+conta+"<br><br>");
+	document.write("Han suspendido un total de "+conts+"<br><br>");
+
+}	
+
+var notas = new Array(5);
+
+cargar_datos(notas);
+
+mostrar_notas(notas);
+
+AlumnosAprobados(notas);
+
+</script>
+</body>
+</html>

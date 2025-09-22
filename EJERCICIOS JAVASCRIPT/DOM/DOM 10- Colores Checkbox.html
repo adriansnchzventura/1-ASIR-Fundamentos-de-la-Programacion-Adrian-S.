@@ -1,0 +1,72 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica 6 - Ejercicio 2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function cambiarColor()
+{
+
+
+
+if(document.form1.rojo.checked){
+	color= document.form1.rojo.value;
+	
+	document.body.style.backgroundColor= color;
+	}
+
+if(document.form1.verde.checked){
+	color= document.form1.verde.value;
+	
+	document.body.style.backgroundColor= color;
+	}
+
+if(document.form1.azul.checked){
+	color= document.form1.azul.value;
+	
+	document.body.style.backgroundColor= color;
+	}
+
+if(document.form1.amarillo.checked){
+	color= document.form1.amarillo.value;
+	
+	document.body.style.backgroundColor= color;
+	}
+	
+if(document.form1.morado.checked){
+	color= document.form1.morado.value;
+	
+	document.body.style.backgroundColor= color;
+	}
+
+
+}
+
+</script>
+
+<form name="form1">
+
+
+	
+<input type="checkbox" name="rojo" value="#ff0000">Rojo</option><br>
+
+<input type="checkbox" name="verde" value="#29684c">Verde</option><br>
+
+<input type="checkbox" name="azul" value="#1381a2">Azul</option><br>
+
+<input type="checkbox" name="amarillo" value="#ffe861">Amarillo</option><br>
+
+<input type="checkbox" name="morado" value="#471ac0">Morado</option><br>
+
+
+<input type="button" value="Cambiar color" onClick="cambiarColor()"><br>
+	
+</select>
+<br>
+</form>
+</body>
+</html>

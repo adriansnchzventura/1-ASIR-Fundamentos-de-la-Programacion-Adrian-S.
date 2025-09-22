@@ -1,0 +1,57 @@
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> DOM 6</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function CambiarTema()
+{
+indice=document.form1.select1.selectedIndex;
+
+tema=document.form1.select1.options[indice].value;
+
+
+if (tema == "claro")
+	{
+	colorLetra="#0576b1";
+	colorFondo="#fff9c0";
+	}
+ 
+else if (tema == "oscuro")
+	{
+	colorLetra="white";
+	colorFondo="black";
+	}
+
+	document.body.style.color= colorLetra;
+	document.body.style.backgroundColor= colorFondo;
+
+}
+
+</script>
+
+<form name="form1">
+
+<select size="1" name="select1" ONCHANGE="CambiarTema()">
+
+	<option value="claro">Claro</option>
+	<option value="oscuro">Oscuro</option>
+
+	
+</select>
+<br>
+</form>
+
+<p> Este texto tiene que cambiar de fuente </p>
+
+</body>
+<p> Este texto tiene que cambiar de fuente </p>
+<p> Este texto tiene que cambiar de fuente </p>
+<p> Este texto tiene que cambiar de fuente </p>
+<p> Este texto tiene que cambiar de fuente </p>
+<p> Este texto tiene que cambiar de fuente </p>
+<p> Este texto tiene que cambiar de fuente </p>
+</html>

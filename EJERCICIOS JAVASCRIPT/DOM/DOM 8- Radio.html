@@ -1,0 +1,43 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica 6 - Ejercicio 2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function contarSelecciones()
+{
+
+var cant=0;
+
+if(document.form1.estudios[0].checked){
+	alert("No tienes estudios")}
+
+if(document.form1.estudios[1].checked){
+	alert("Tienes estudios primarios")}
+
+if(document.form1.estudios[2].checked){
+	alert("Tienes estudios secundarios")}
+
+if(document.form1.estudios[3].checked){
+	alert("Tienes estudios universitarios")}
+
+
+}
+</script>
+
+<form name="form1">
+
+<input type="radio" name="estudios">Sin estudios<br>
+<input type="radio" name="estudios">Estudios Primarios<br>
+<input type="radio" name="estudios">Estudios Secundarios<br>
+<input type="radio" name="estudios">Estudios Universitarios<br>
+
+<input type="button" value="Mostrar" onClick="contarSelecciones()">
+
+</form>
+
+</body>

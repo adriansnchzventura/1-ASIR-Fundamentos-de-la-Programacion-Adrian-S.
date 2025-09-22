@@ -1,0 +1,45 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> DOM 1</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function mostrar()
+{
+var nombre=document.form.nombre.value;
+var apellido=document.form.apellido.value;
+var edad=document.form.edad.value;
+var tf=document.form.telefono.value;
+
+alert("Ingreso del nombre: "+nombre);
+alert("Ingreso del apellido: "+apellido);
+alert("Ingreso de la edad: "+edad);
+alert("Ingreso del telefono: "+tf);
+
+
+document.write("Ingreso del nombre: "+nombre+"<br>");
+document.write("Ingreso del apellido: "+apellido+"<br>");
+document.write("Usuario: "+nombre.toLowerCase()+"."+apellido.toLowerCase()+".asir@salesianosatocha.com <br>");
+document.write("Ingreso de la edad: "+edad+"<br>");
+document.write("Ingreso del telefono: "+tf+"<br>");
+}
+
+</script>
+
+<form name="form">
+
+Ingrese su nombre: <input type="text" name="nombre"><br>
+Ingrese su primer apellido: <input type="text" name="apellido"><br>
+Ingrese su edad: <input type="text" name="edad" size=5><br>
+Ingrese su telefono: <input type="text" name="telefono"><br>
+
+<input type="button" value="Confirmar" onClick="mostrar()">
+
+</form>
+
+</body>
+</html>

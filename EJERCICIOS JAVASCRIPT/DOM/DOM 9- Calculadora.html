@@ -1,0 +1,61 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica 6 - Ejercicio 2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function calcular()
+{
+var num1 = parseFloat(document.calculadora.num1.value);
+var num2 = parseFloat(document.calculadora.num2.value);
+var operacion = document.calculadora.operacion.value;
+var resul="";
+
+
+if(operacion == "suma"){
+	resul= num1+num2;
+	alert(resul);
+	}
+
+if(operacion=="resta"){
+	resul= num1-num2;
+		alert(resul);
+	}
+
+if(operacion == "multi"){
+	resul= num1*num2;
+	alert(resul);
+	}
+
+if(operacion == "divis"){
+	resul= num1/num2;
+	alert(resul);
+	}
+
+}
+</script>
+
+<form name="calculadora">
+
+<input type="number" name="num1">
+
+<select name="operacion">
+
+	<option value="suma">+</option>
+	<option value="resta">-</option>
+	<option value="multi">x</option>
+	<option value="divis">/</option>
+	
+</select>
+
+<input type="number" name="num2">
+
+<input type="button" value="Calcular" onClick="calcular()">
+
+</form>
+
+</body>

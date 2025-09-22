@@ -1,0 +1,28 @@
+<!doctype html>
+<Html>
+<head>
+<title>Ejercicio de IF/ELSE 4</title>
+</head>
+<body>
+<script>
+	var ValorCompra, descuento10, Valor10, descuento20, Valor20;
+	ValorCompra=parseFloat(prompt("Ingrese el valor de su compra"));
+	if (ValorCompra<50)
+	{
+		document.write("No tiene ningún descuento aplicable, su importe es de "+ValorCompra+" €");
+	}
+		if (ValorCompra>=100)
+	{
+		descuento20=ValorCompra * 0.20;
+		Valor20=ValorCompra - descuento20;
+		document.write("WOW! Tienes un 20% de descuento! Su importe a pagar es de "+Valor20+" €");
+	}
+	else
+	{
+		descuento10=ValorCompra * 0.10;
+		Valor10=ValorCompra - descuento10;
+		document.write("Tienes un 10% de descuento! Su importe a pagar es de "+Valor10+" €");
+	}
+</script>
+</body>
+</html>

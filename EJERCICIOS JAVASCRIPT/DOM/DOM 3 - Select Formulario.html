@@ -1,0 +1,42 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica 6 - Ejercicio 2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function SeleccionProductos()
+{
+posicion=document.form1.select1.selectedIndex;
+
+document.form1.text1.value= posicion
+document.form1.text2.value= document.form1.select1.options[posicion].text;
+document.form1.text3.value= document.form1.select1.options[posicion].value;
+}
+
+</script>
+
+<form name="form1">
+
+<select size="1" name="select1" ONCHANGE="SeleccionProductos()">
+
+	<option value="1000€">Movil</option>
+	<option value="1400€">PC</option>
+	<option value="150€">Monitor</option>
+	<option value="50€">Teclado</option>
+	<option value="15€">Mouse</option>
+	
+</select>
+<br>
+Numero de índice seleccionado del objeto:
+<input type="text" name="text1" value="Numero de Producto"><br>
+Articulo seleccionado:<input type="text" name="text2" value="Dispositivo"><br>
+Valor asociado:<input type="text" name="text3" value="Precio(€)"><br>
+
+</form>
+
+</body>
+</html>

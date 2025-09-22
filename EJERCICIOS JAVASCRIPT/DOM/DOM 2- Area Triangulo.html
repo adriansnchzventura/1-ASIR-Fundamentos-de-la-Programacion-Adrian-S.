@@ -1,0 +1,38 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> DOM 2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function areaTriangulo()
+{
+
+base=parseFloat(document.medidas.base.value);
+altura=parseFloat(document.medidas.altura.value);
+
+area= (base*altura) /2;
+
+
+document.write("El area del triangulo es: "+area+" cm<sup>2<br>");
+
+}
+</script>
+
+<form name="medidas">
+
+<label for="base">Base: 
+<input type="number" name="base"> cm<br>
+
+<label for="altura">Altura: 
+<input type="number" name="altura"> cm<br>
+
+<input type="button" value="Confirmar" onClick="areaTriangulo()">
+
+</form>
+
+</body>
+</html>

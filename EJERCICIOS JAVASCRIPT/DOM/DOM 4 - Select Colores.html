@@ -1,0 +1,42 @@
+<!doctype html>
+<Html>
+<head>
+	<meta charset="UTF-8">
+<title> Practica 6 - Ejercicio 2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function SeleccionProductos()
+{
+indice=document.form1.select1.selectedIndex;
+
+color=document.form1.select1.options[indice].value;
+
+
+	document.body.style.backgroundColor= color;
+
+}
+
+</script>
+
+<form name="form1">
+
+<select size="1" name="select1" ONCHANGE="SeleccionProductos()">
+
+	<option value="#ff0000">Rojo</option>
+	<option value="#29684c">Verde</option>
+	<option value="#1381a2">Azul</option>
+	<option value="#ffe861">Amarillo</option>
+	<option value="#471ac0">Morado</option>
+	
+</select>
+<br>
+</form>
+
+
+
+<p>HOLA HOLA HOLA</P>
+</body>
+</html>
