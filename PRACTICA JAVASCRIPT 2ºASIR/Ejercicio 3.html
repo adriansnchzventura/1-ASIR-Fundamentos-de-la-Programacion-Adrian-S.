@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <form>
+         <p>¿En que año comenzo la 1era Guerra Mindial?</p>
+    <input type="radio" name="pregunta1" id="pregunta1" value="pregunta1"> 1914 <br>
+    <input type="radio" name="pregunta1" id="pregunta2" value="pregunta2"> 1919<br>
+     <input type="radio" name="pregunta1" id="pregunta3" value="pregunta3"> 1922<br>
+
+     <span id="errorPregunta1" class="error"></span><br><br>
+
+      <p>¿Que rey inglés reinaba durante la !era Guerra Mundial?</p>
+    <input type="radio" name="pregunta4" id="pregunta4" value="pregunta4">Enrique VII<br>
+    <input type="radio" name="pregunta4" id="pregunta5" value="pregunta5"> Jorge VI<br>
+     <input type="radio" name="pregunta4" id="pregunta6" value="pregunta6"> Jorge V<br>
+         <span id="errorPregunta4" class="error"></span><br><br>
+
+          <p>¿Cual es el titulo del Emperador de Alemania para aquel entonces?</p>
+    <input type="radio" name="pregunta7" id="pregunta7" value="pregunta7">Emperadoren<br>
+    <input type="radio" name="pregunta7" id="pregunta8" value="pregunta8"> Roi<br>
+     <input type="radio" name="pregunta7" id="pregunta9" value="pregunta9"> Kaiser<br>
+         <span id="errorPregunta7" class="error"></span><br><br>
+
+
+    <button type="button" onclick="calcularNota()">Comprobar resultados</button>
+    </form>
+<p id="resultado"></p>
+
+    <script>
+        function calcularNota(){
+            formularioValido=true;
+            respuesta1=document.getElementById("pregunta1").checked;
+            respuesta2=document.getElementById("pregunta2").checked;
+            respuesta3=document.getElementById("pregunta3").checked;
+            errorPregunta1=document.getElementById("errorPregunta1");
+
+            respuesta4=document.getElementById("pregunta4").checked;
+            respuesta5=document.getElementById("pregunta5").checked;
+            respuesta6=document.getElementById("pregunta6").checked;
+            errorPregunta4=document.getElementById("errorPregunta4");
+
+            respuesta7=document.getElementById("pregunta7").checked;
+            respuesta8=document.getElementById("pregunta8").checked;
+            respuesta9=document.getElementById("pregunta9").checked;
+            errorPregunta7=document.getElementById("errorPregunta7");
+            resultado=document.getElementById("resultado");
+			
+            nota = 10
+            if (respuesta2) nota-=3.33;
+            if (respuesta3) nota-=3.33;
+			
+            if(respuesta4) nota-=3.33;
+            if(respuesta5) nota-=3.33;
+			
+            if(respuesta7) nota-=3.33;
+            if(respuesta8) nota-=3.33;
+			
+			if(nota < 1) nota=0;
+			
+            resultado.textContent="Tu nota es :" + nota;
+
+
+        }
+
+    </script>
+	
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2</title>
+</head>
+<body>
+
+<style>
+
+	.error{
+	color: red;
+	}
+
+	.cajas{
+	border: 1px solid black;
+	paddin: 1em;
+	margin: 5px;
+	}
+
+</style>
+<div class="cajas">
+  <h1>Configuracion del coche</h1>
+  <form>
+</div>
+	<div class="cajas">
+    <p>Tipo de Motor:</p>
+    <input type="radio" name="motor" id="gasolina" value="gasolina"> Gasolina <br>
+    <input type="radio" name="motor" id="diesel" value="diesel"> Diesel (150€)
+    <input type="radio" name="motor" id="hibrido" value="hibrido"> Hibrido (300€)
+
+    <span id="errorMotor" class="error"></span><br><br>
+    </div>
+	
+	<div class="cajas">
+    <p>Tipo de Puertas:</p>
+    <input type="radio" name="puerta" id="3puerta" value="3puerta"> 3 puertas(Descuenta 200€ en caso de coche Diesel) (Solo disponible en Gasolina)
+    <input type="radio" name="puerta" id="5puerta" value="5puerta"> 5 puertas
+     <input type="radio" name="puerta" id="familiar" value="familiar"> Familiar(150€)
+
+    <span id="errorPuerta" class="error"></span><br><br>
+    </div>
+	
+	<div class="cajas">
+    <p>Tipo de Pintura:</p>
+    <input type="radio" name="pintura" id="rojo" value="rojo"> Rojo
+    <input type="radio" name="pintura" id="verde" value="verde"> Verde
+    <input type="radio" name="pintura" id="naranja" value="naranja">Naranja
+    <input type="radio" name="pintura" id="blanco" value="blanco"> Blanco (500€ menos)
+    <input type="radio" name="pintura" id="negro" value="negro"> Negro (500€ menos)
+    <br>
+    
+    <span id="errorPintura" class="error"></span><br><br>
+    </div>
+
+	<div class="cajas">
+    <p>Seleccionar los extras que desees:</p>
+    <input type="checkbox" id="metalizada"> Pintura metalizada (No disponible para Blanco o Negro)<br>
+    <input type="checkbox" id="llantas"> Llantas<br>
+    <input type="checkbox" id="climatizador"> Climatizador<br>
+    <input type="checkbox" id="gps"> Navegador GPS<br>
+    <input type="checkbox" id="dvd"> Reproductor DVD<br>
+	<span id="errorObjetivo"></span><br>
+    </div>
+	
+	<div class="cajas">
+    <button type="button" onclick="calcularPrecio()">Calcule su presupuesto</button>
+	</form>
+	<p id="resultado">Su presupuesto es de</p>
+    </div>
+    <script>
+	
+function calcularPrecio() {
+
+
+	var
+    formularioValido=true;
+    gasolina=document.getElementById("gasolina").checked;
+    diesel=document.getElementById("diesel").checked;
+    hibrido=document.getElementById("hibrido").checked;
+    errorMotor=document.getElementById("errorMotor");
+    puerta3=document.getElementById("3puerta").checked;
+    puerta5=document.getElementById("5puerta").checked;
+    familiar=document.getElementById("familiar").checked;
+    errorPuerta=document.getElementById("errorPuerta");
+    rojo=document.getElementById("rojo").checked;
+    verde=document.getElementById("verde").checked;
+    naranja=document.getElementById("naranja").checked;
+    blanco=document.getElementById("blanco").checked;
+    negro=document.getElementById("negro").checked;
+    errorPintura=document.getElementById("errorPintura");
+    metalizada=document.getElementById("metalizada").checked;
+    llantas=document.getElementById("llantas").checked;
+    climatizador=document.getElementById("climatizador").checked;
+    gps=document.getElementById("gps").checked;
+    dvd=document.getElementById("dvd").checked;
+    errorObjetivo=document.getElementById("errorObjetivo");
+    resultado=document.getElementById("resultado");
+	Preciobase = 12000;
+	
+	
+    if (puerta3 && !gasolina ) {
+        formularioValido=false;
+         errorPuerta.textContent="No disponible ese combustible en ese formato";
+    }
+    else {
+        formularioValido=true;
+    }
+    if (metalizada && (blanco || negro)) {
+         formularioValido=false;
+        errorObjetivo.textContent="No disponible pintura metalizada en Blanco o Negro";
+    }
+    else {
+        formularioValido=true;
+    }
+    if (dvd && !familiar) {
+            formularioValido=false;
+            errorObjetivo.textContent="no disponible con esas opcion";
+        }
+          else {
+            formularioValido=true;
+        }
+
+        
+        if (diesel) Preciobase +=150;
+        if (hibrido) Preciobase +=300;
+        if (puerta3) Preciobase -=200;
+        if (familiar) Preciobase+=150;
+        if (blanco) Preciobase-=500;
+        if (negro) Preciobase -=600
+
+         resultado.textContent="Su presupuesto es de " + Preciobase+"€"
+    }
+
+
+  </script>
+</body>
+</html>
